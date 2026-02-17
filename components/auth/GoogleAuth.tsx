@@ -14,7 +14,8 @@ const GoogleAuth: React.FC = () => {
   }, []);
 
   const handleGoogleLogin = () => {
-    window.location.href = 'http://localhost:5000/api/auth/google';
+    const apiUrl = import.meta.env.VITE_API_URL || 'https://terraa.online/api';
+    window.location.href = `${apiUrl.replace('/api', '')}/api/auth/google`;
   };
 
   return (

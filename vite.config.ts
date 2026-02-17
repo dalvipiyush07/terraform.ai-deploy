@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => {
         port: 3000,
         host: '0.0.0.0',
       },
+      preview: {
+        port: 3000,
+        host: '0.0.0.0',
+        strictPort: true,
+      },
       plugins: [react()],
       define: {
         'import.meta.env.VITE_GROQ_API_KEY': JSON.stringify(env.VITE_GROQ_API_KEY),

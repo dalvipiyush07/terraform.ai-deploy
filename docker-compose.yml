@@ -1,6 +1,13 @@
 services:
   app:
-    build: .
+    build:
+      context: .
+      args:
+        - VITE_GROQ_API_KEY=${VITE_GROQ_API_KEY}
+        - VITE_GROQ_API_URL=${VITE_GROQ_API_URL}
+        - VITE_GROQ_MODEL=${VITE_GROQ_MODEL}
+        - VITE_API_URL=${VITE_API_URL}
+        - VITE_UPI_ID=${VITE_UPI_ID}
     container_name: terraform-ai
     restart: always
     environment:

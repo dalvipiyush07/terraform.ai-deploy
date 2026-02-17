@@ -11,8 +11,9 @@ export default defineConfig(({ mode }) => {
       },
       preview: {
         port: 3000,
-        host: true,
+        host: '0.0.0.0',
         strictPort: true,
+        allowedHosts: ['terraa.online', 'www.terraa.online', '.terraa.online']
       },
       plugins: [react()],
       define: {

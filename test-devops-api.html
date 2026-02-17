@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps API Test</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #0e1525; color: white; }
+        button { padding: 10px 20px; margin: 10px; background: #FF9900; border: none; color: white; cursor: pointer; border-radius: 5px; }
+        button:hover { background: #cc7a00; }
+        pre { background: #1c2333; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        .success { color: #3fb950; }
+        .error { color: #f85149; }
+    </style>
+</head>
+<body>
+    <h1>🧪 DevOps Projects API Test</h1>
+    
+    <button onclick="testGet()">Test GET Projects</button>
+    <button onclick="testPost()">Test POST Project</button>
+    <button onclick="clearResults()">Clear</button>
+    
+    <div id="results"></div>
+
+    <script>
+        const API_URL = 'http://localhost:5000/api/devops-projects';
+        
+        function log(message, type = 'info') {
+            const results = document.getElementById('results');
+            const color = type === 'success' ? 'success' : type === 'error' ? 'error' : '';
+            results.innerHTML += `<div class="${color}">${message}</div>`;
+        }
+        
+        function clearResults() {
+            document.getElementById('results').innerHTML = '';
+        }
+        
+        async function testGet() {
+            log('<h3>Testing GET /api/devops-projects</h3>');
+            try {
+                const response = await fetch(API_URL);
+                const data = await response.json();
+                log(`<strong>Status:</strong> ${response.status}`, 'success');
+                log(`<strong>Projects Found:</strong> ${data.length}`, 'success');
+                log('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+            } catch (error) {
+                log(`<strong>Error:</strong> ${error.message}`, 'error');
+                log('Make sure backend server is running on port 5000!', 'error');
+            }
+        }
+        
+        async function testPost() {
+            log('<h3>Testing POST /api/devops-projects</h3>');
+            const newProject = {
+                title: 'Test Project ' + Date.now(),
+                description: 'This is a test project',
+                githubUrl: 'https://github.com/test/project',
+                tags: ['Test', 'Demo'],
+                icon: '🧪',
+                difficulty: 'Beginner'
+            };
+            
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(newProject)
+                });
+                const data = await response.json();
+                log(`<strong>Status:</strong> ${response.status}`, 'success');
+                log('<strong>Created Project:</strong>', 'success');
+                log('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+            } catch (error) {
+                log(`<strong>Error:</strong> ${error.message}`, 'error');
+                log('Make sure backend server is running on port 5000!', 'error');
+            }
+        }
+        
+        // Auto-test on load
+        window.onload = () => {
+            log('🚀 Ready to test! Click buttons above.');
+            log('Backend should be running on: http://localhost:5000');
+        };
+    </script>
+</body>
+</html>

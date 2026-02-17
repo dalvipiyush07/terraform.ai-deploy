@@ -1,0 +1,5 @@
+{
+  "name": "CloudArchitect Live",
+  "description": "An interactive workspace for generating production-ready AWS infrastructure using Terraform (HCL) through advanced AI reasoning.",
+  "requestFramePermissions": []
+}

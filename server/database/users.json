@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "google_id": "107501432674953932232",
+    "email": "msshelke0505@gmail.com",
+    "name": "Mahesh Shelke",
+    "picture": "https://lh3.googleusercontent.com/a/ACg8ocIhJRE_h52qXuP0FzpvGaYRItkCDIFaS3lwShjwLc2s6h6HU0gw=s96-c",
+    "theme": "dark",
+    "plan": "FREE",
+    "planExpiry": null,
+    "created_at": "2026-02-14T07:36:29.257Z"
+  },
+  {
+    "id": 2,
+    "google_id": "101889710068934617474",
+    "email": "mshelke0505@gmail.com",
+    "name": "Mahesh Shelke",
+    "picture": "https://lh3.googleusercontent.com/a/ACg8ocLuVIH_0EhDCseP0FhA54GAstexmeuR8bEtt8ZjRDDWU7lN-g=s96-c",
+    "theme": "dark",
+    "plan": "FREE",
+    "planExpiry": null,
+    "created_at": "2026-02-14T08:48:12.052Z"
+  },
+  {
+    "id": 3,
+    "google_id": "100768533356606217435",
+    "email": "piyushdalvi65@gmail.com",
+    "name": "Dalvi Piyush",
+    "picture": "https://lh3.googleusercontent.com/a/ACg8ocK3wj63XWdrtvRlcNr7h4k37DJpij9R3mJ9vkeQzvC0-FtZWZIO=s96-c",
+    "theme": "light",
+    "plan": "FREE",
+    "planExpiry": null,
+    "created_at": "2026-02-14T09:13:24.947Z"
+  }
+]

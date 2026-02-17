@@ -1,0 +1,53 @@
+[
+  {
+    "id": "1",
+    "title": "Kubernetes Multi-Cluster Setup",
+    "description": "Production-ready Kubernetes cluster with monitoring, logging, and auto-scaling capabilities",
+    "githubUrl": "https://github.com/kubernetes/kubernetes",
+    "tags": [
+      "Kubernetes",
+      "Docker",
+      "Helm",
+      "Monitoring"
+    ],
+    "icon": "☸️",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "2",
+    "title": "CI/CD Pipeline with Jenkins",
+    "description": "Complete CI/CD pipeline setup with Jenkins, Docker, and automated testing",
+    "githubUrl": "https://github.com/jenkinsci/jenkins",
+    "tags": [
+      "Jenkins",
+      "CI/CD",
+      "Docker",
+      "Automation"
+    ],
+    "icon": "🔄",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "3",
+    "title": "Terraform AWS Infrastructure",
+    "description": "Infrastructure as Code templates for AWS using Terraform with best practices",
+    "githubUrl": "https://github.com/hashicorp/terraform",
+    "tags": [
+      "Terraform",
+      "AWS",
+      "IaC",
+      "Cloud"
+    ],
+    "icon": "🏗️",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "1771074181856",
+    "title": "End-to-End--3-Tier-Infrastructure-Automation-using-Terraform-Ansible-Jenkins",
+    "description": "End-to-end 3-tier infrastructure automation on AWS using Terraform, Ansible, and Jenkins. Terraform provisions the infrastructure, Ansible configures Web and App servers, and Jenkins orchestrates deployments via CI/CD. The project follows DevOps best practices with IaC, configuration management, and version control.",
+    "githubUrl": "https://github.com/dalvipiyush07/End-to-End--3-Tier-Infrastructure-Automation-using-Terraform-Ansible-Jenkins.git",
+    "tags": [],
+    "icon": "📦",
+    "difficulty": "Advanced"
+  }
+]
